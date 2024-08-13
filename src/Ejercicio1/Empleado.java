@@ -3,10 +3,31 @@ package Ejercicio1;
 public class Empleado {
 	
 	// Atributos
+	private static int contadorId = 999;
 	
-	private int id; 
+	private final int id; 
 	private String nombre;
 	private int edad;
+	
+	//Constructores
+	
+	public Empleado() 
+	{
+		contadorId ++;
+		
+		this.id = contadorId;
+		this.nombre = "sin nombre";
+		this.edad = 99;
+	}
+	
+	public Empleado(String nombre, int edad)
+	{
+		contadorId ++;
+		
+		this.id = contadorId;
+		this.nombre = nombre;
+		this.edad = edad;
+	}
 	
 	// Getters y setters
 	
