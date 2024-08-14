@@ -58,10 +58,9 @@ public class Empleado {
 	} 
 	
 	//Punto 6 y 7
-	public static int devuelveProximoID()
+	public static int devuelveProximoId()
 	{
-		System.out.println("El proximo ID será el: " + (++contadorId));
-		return contadorId++;
+		return contadorId+1;
 	}
 	
 	@Override
