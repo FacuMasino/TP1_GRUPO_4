@@ -56,4 +56,17 @@ public class Empleado {
 	{
 		this.edad = edad;
 	} 
+	
+	//Punto 6 y 7
+	public static int devuelveProximoID()
+	{
+		System.out.println("El proximo ID será el: " + (++contadorId));
+		return contadorId++;
+	}
+	
+	@Override
+	public String toString() {
+		return "Empleado:id="+ id +", nombre=" + nombre + ", edad=" + edad;
+	}
+	
 }
