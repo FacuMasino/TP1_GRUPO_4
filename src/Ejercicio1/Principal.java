@@ -7,14 +7,23 @@ public class Principal {
 		Empleado empleado1 = new Empleado();
 		System.out.println(empleado1.toString());
 		
-		System.out.println("\nEl próximo ID a asignar será: " + Empleado.devuelveProximoId() + "\n");
+		System.out.println("\nEl prï¿½ximo ID a asignar serï¿½: " + Empleado.devuelveProximoId() + "\n");
 		
 		Empleado empleado2 = new Empleado("Ana Clara", 34);
 		System.out.println(empleado2.toString()); 
 		
-		System.out.println("\nEl próximo ID a asignar será: " + Empleado.devuelveProximoId() + "\n");
+		System.out.println("\nEl prï¿½ximo ID a asignar serï¿½: " + Empleado.devuelveProximoId() + "\n");
 		
-	
+		Empleado empleado3 = new Empleado();
+		empleado3.setNombre("Maxi");
+		empleado3.setEdad(30);
+		System.out.println(empleado3.toString());
+		
+		Empleado empleado4 = new Empleado("Facu", 25);
+		System.out.println(empleado4.toString());
+		
+		Empleado empleado5 = new Empleado();
+		System.out.println(empleado5.toString());
 	}
 
 }

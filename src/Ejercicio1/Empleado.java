@@ -58,6 +58,7 @@ public class Empleado {
 	} 
 	
 	//Punto 6 y 7
+
 	public static int devuelveProximoId()
 	{
 		return contadorId+1;
